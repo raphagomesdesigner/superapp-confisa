@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="330" viewBox="0 0 480 330" font-family="Arial, Helvetica, sans-serif">
+  <rect width="480" height="330" rx="16" fill="#ffffff"/>
+  <!-- Concreto: seção 15 x 40 cm (6 px por cm) -->
+  <rect x="150" y="50" width="90" height="240" fill="#e5e7eb" stroke="#0f034f" stroke-width="2"/>
+  <!-- Estribo: cobrimento de 2,5 cm (15 px) -->
+  <rect x="165" y="65" width="60" height="210" rx="4" fill="none" stroke="#eb3e37" stroke-width="3"/>
+  <!-- Barras superiores (2 x 8,0 mm) -->
+  <circle cx="177" cy="77" r="6" fill="#0f034f"/>
+  <circle cx="213" cy="77" r="6" fill="#0f034f"/>
+  <!-- Barras inferiores (2 x 12,5 mm) -->
+  <circle cx="178" cy="262" r="9" fill="#0f034f"/>
+  <circle cx="212" cy="262" r="9" fill="#0f034f"/>
+  <!-- Cota: largura -->
+  <line x1="150" y1="34" x2="240" y2="34" stroke="#0f034f" stroke-width="1.5"/>
+  <line x1="150" y1="28" x2="150" y2="40" stroke="#0f034f" stroke-width="1.5"/>
+  <line x1="240" y1="28" x2="240" y2="40" stroke="#0f034f" stroke-width="1.5"/>
+  <text x="195" y="24" font-size="14" text-anchor="middle" fill="#0f034f">15 cm</text>
+  <!-- Cota: altura -->
+  <line x1="256" y1="50" x2="256" y2="290" stroke="#0f034f" stroke-width="1.5"/>
+  <line x1="250" y1="50" x2="262" y2="50" stroke="#0f034f" stroke-width="1.5"/>
+  <line x1="250" y1="290" x2="262" y2="290" stroke="#0f034f" stroke-width="1.5"/>
+  <text x="268" y="175" font-size="14" fill="#0f034f">40 cm</text>
+  <!-- Cota: cobrimento -->
+  <line x1="150" y1="170" x2="165" y2="170" stroke="#eb3e37" stroke-width="2"/>
+  <text x="144" y="166" font-size="13" text-anchor="end" fill="#0f034f">cobrimento</text>
+  <text x="144" y="182" font-size="13" text-anchor="end" fill="#0f034f">2,5 cm</text>
+  <!-- Legendas -->
+  <text x="330" y="82" font-size="13" fill="#0f034f">2 barras de 8,0 mm</text>
+  <text x="330" y="98" font-size="13" fill="#0f034f">(superior)</text>
+  <text x="330" y="176" font-size="13" fill="#eb3e37" font-weight="bold">estribo de 5,0 mm</text>
+  <text x="330" y="266" font-size="13" fill="#0f034f">2 barras de 12,5 mm</text>
+  <text x="330" y="282" font-size="13" fill="#0f034f">(inferior)</text>
+</svg>

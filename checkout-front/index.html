@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c22">
+  <meta name="description" content="Configure o SuperApp para a rotina da sua ferragem armada.">
+  <title>Contratação do SuperApp · Confisa</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=20261029-single-plan-r2">
+  <link rel="stylesheet" href="responsive-tune.css?v=20261029-single-plan-r2">
+  <script src="script.js?v=20261029-single-plan-r2" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html" aria-label="SuperApp Confisa, voltar ao site">
+        <img src="../assets/superapp/logo-superapp-simbolo.png" alt="" width="42" height="42">
+        <span>SuperApp <small>· Confisa</small></span>
+      </a>
+      <a class="back-link" href="../index.html?v=20261029-single-plan-r2#planos"><span aria-hidden="true">←</span> Voltar ao site</a>
+    </div>
+  </header>
+
+  <main id="conteudo" class="page-shell">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> CONTRATAÇÃO DO SUPERAPP</p>
+      <h1 id="page-title">Vamos configurar<br><em>o seu ambiente.</em></h1>
+      <p class="intro-copy">Confira o plano escolhido e informe os dados da empresa para preparar o seu ambiente.</p>
+    </section>
+
+    <div class="checkout-grid">
+      <div class="checkout-main">
+        <section class="form-panel" aria-labelledby="form-title">
+          <div class="section-title-row form-heading">
+            <div><span class="section-index">01</span><div><h2 id="form-title">Dados da empresa</h2><p>Usaremos essas informações para preparar seu ambiente.</p></div></div>
+          </div>
+
+          <ol class="stepper" aria-label="Etapas da contratação">
+            <li class="step active" data-step-indicator="1"><span>1</span><div><strong>Empresa e acesso</strong><small>Dados para configurar o ambiente</small></div></li>
+            <li class="step-divider" aria-hidden="true"></li>
+            <li class="step" data-step-indicator="2"><span>2</span><div><strong>Revisão</strong><small>Confira antes de continuar</small></div></li>
+          </ol>
+
+          <form id="company-form" novalidate>
+            <div class="step-content" data-step="1">
+              <div class="form-subheading"><span class="subheading-icon" aria-hidden="true">01</span><div><h3>Identificação da empresa</h3><p>Informe os dados usados na configuração do cadastro.</p></div></div>
+              <div class="field-grid">
+                <label class="field field-wide" for="cnpj"><span>CNPJ <b>*</b></span><input id="cnpj" name="cnpj" inputmode="numeric" autocomplete="organization" placeholder="00.000.000/0000-00" required><small>Somente números e pontuação.</small></label>
+                <label class="field" for="legal-name"><span>Razão social ou titular <b>*</b></span><input id="legal-name" name="legalName" autocomplete="organization" placeholder="Nome registrado da empresa" required></label>
+                <label class="field" for="trade-name"><span>Nome fantasia <b>*</b></span><input id="trade-name" name="tradeName" autocomplete="organization" placeholder="Como a empresa é conhecida" required></label>
+              </div>
+
+              <div class="form-subheading"><span class="subheading-icon" aria-hidden="true">02</span><div><h3>Responsável pelo ambiente</h3><p>Este será o contato principal da conta.</p></div></div>
+              <div class="field-grid">
+                <label class="field" for="email"><span>E-mail corporativo <b>*</b></span><input id="email" name="email" type="email" autocomplete="email" placeholder="voce@empresa.com.br" required></label>
+                <label class="field" for="email-confirm"><span>Confirme o e-mail <b>*</b></span><input id="email-confirm" name="emailConfirm" type="email" autocomplete="off" placeholder="Digite o e-mail novamente" required><small class="field-message" data-email-message aria-live="polite"></small></label>
+                <label class="field field-wide" for="phone"><span>WhatsApp ou celular <b>*</b></span><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" required></label>
+              </div>
+
+              <div class="form-subheading"><span class="subheading-icon" aria-hidden="true">03</span><div><h3>Endereço e acesso</h3><p>Defina como sua equipe vai entrar no SuperApp.</p></div></div>
+              <div class="field-grid">
+                <label class="field field-wide" for="workspace"><span>Identificador exclusivo do sistema <b>*</b></span><span class="workspace-input"><input id="workspace" name="workspace" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="minhaempresa" required><span>.ferroarmado.ai</span></span><small data-workspace-preview>Seu endereço: <strong>minhaempresa.ferroarmado.ai</strong></small></label>
+                <label class="field field-wide" for="password"><span>Senha de acesso <b>*</b></span><span class="password-input"><input id="password" name="password" type="password" autocomplete="new-password" placeholder="Crie uma senha" required><button type="button" class="reveal-button" aria-label="Mostrar senha" aria-pressed="false" data-reveal-password>Mostrar</button></span><small>A senha será configurada para o acesso ao ambiente.</small></label>
+              </div>
+
+              <p class="form-error" data-form-error role="alert" hidden></p>
+              <div class="form-actions"><span class="required-note"><b>*</b> Campos obrigatórios</span><button type="submit" class="button button-primary">Revisar contratação <span aria-hidden="true">→</span></button></div>
+            </div>
+
+            <div class="step-content" data-step="2" hidden>
+              <div class="review-heading"><span class="review-check" aria-hidden="true">✓</span><div><h3>Revise sua contratação</h3><p>Confira os dados antes de seguir para o próximo passo.</p></div></div>
+              <div class="review-card"><div class="review-card-title"><h4>Plano selecionado</h4><a class="text-button" href="../index.html?v=20261029-single-plan-r2#planos">Alterar plano</a></div><div class="review-plan"><span class="review-plan-icon" aria-hidden="true">S</span><div><strong data-review-plan>Super Essencial</strong><small data-review-plan-description>Montagens e orçamentos em um só lugar.</small></div><strong class="review-price" data-review-price>R$ 149<span>/mês</span></strong></div></div>
+              <div class="review-card"><div class="review-card-title"><h4>Dados da empresa</h4><button type="button" class="text-button" data-edit-details>Editar dados</button></div><dl class="review-details"><div><dt>Empresa</dt><dd data-review-company>—</dd></div><div><dt>CNPJ</dt><dd data-review-cnpj>—</dd></div><div><dt>E-mail</dt><dd data-review-email>—</dd></div><div><dt>WhatsApp</dt><dd data-review-phone>—</dd></div><div><dt>Endereço do ambiente</dt><dd data-review-workspace>—</dd></div></dl></div>
+              <div class="handoff-note"><span class="handoff-icon" aria-hidden="true">↗</span><p><strong>Próximo passo: pagamento</strong><br>Esta prévia mostra a revisão da contratação. O pagamento será conectado ao fluxo existente quando o frontend for integrado.</p></div>
+              <p class="form-error" data-form-error role="alert" hidden></p>
+              <div class="form-actions review-actions"><button type="button" class="button button-secondary" data-back-step><span aria-hidden="true">←</span> Voltar e editar</button><button type="button" class="button button-primary" disabled title="Disponível após a integração do pagamento">Continuar para pagamento <span aria-hidden="true">→</span></button></div>
+              <p class="preview-note">Prévia visual: os dados ficam somente nesta página e não são enviados nem salvos.</p>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <aside class="order-summary" aria-labelledby="summary-title">
+        <div class="summary-top"><div class="summary-label-row"><span class="summary-label"><span class="summary-dot" aria-hidden="true"></span> PLANO ESCOLHIDO</span><a class="summary-change" href="../index.html?v=20261029-single-plan-r2#planos">Alterar plano</a></div><h2 id="summary-title" data-summary-plan>Super Essencial</h2><p data-summary-description>Organize montagens e orçamentos em um só lugar.</p><div class="summary-price"><strong data-summary-price>R$ 149</strong><span>/mês</span></div><p class="summary-billing">Cobrança mensal do plano selecionado.</p></div>
+        <div class="summary-divider"></div>
+        <div class="summary-benefits"><h3>Recursos do plano</h3><ul data-benefits-list><li>Montagens</li><li>Orçamentos</li><li>Kanban de orçamentos e montagens</li><li>1 usuário incluído</li><li>Montagem assistida por IA</li></ul></div>
+        <div class="summary-foot"><span class="summary-mark" aria-hidden="true">✓</span><p>Seu plano e seus dados ficam disponíveis para revisão antes do pagamento.</p></div>
+      </aside>
+    </div>
+    <footer class="page-footer"><span>SuperApp · Confisa</span><span>Uma solução para ferragem armada.</span></footer>
+  </main>
+</body>
+</html>
+
+
+
+
+
